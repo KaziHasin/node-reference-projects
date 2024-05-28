@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="input-box">
+        <h3>Task Manager</h3>
+        <div class="create-input-box">
+          <input type="text" name="" id="create-task" />
+          <input type="button" value="Save" id="save-task-btn" />
+        </div>
+        <div class="update-input-box">
+          <input type="hidden" name="" id="taskId" /><br />
+          <input type="text" name="" id="update-task" />
+          <input type="button" value="Update" id="update-task-btn" />
+          <br /><br />
+          <input
+            type="checkbox"
+            name=""
+            id="completed" />&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="completed">Completed</label>
+        </div>
+      </div>
+
+      <div class="task-listing"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
